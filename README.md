@@ -13,3 +13,17 @@ What is the purpose of this project? 
 *cammonds "export usernsme="username_git" "export token="git_token"
 *And then execute the script file./list_users.sh organization_name repositry_name."
 *Finally, you will get the users who are all having access to the git repository.
+{Scirpt expalnation}
+Line 1 -------- i am using the git api url
+Line 2 --------Here i am getting an input of my github_username and token of my git by using "export" cammond
+Line 3 --------In this line i am grtting my organization name and repositories [Which acess i need to check]this one i am getting like an argument
+Line 4 --------I am creating an two function here one function is to get the api and another function is to list the users here i am using curl cammond to get the api [curl -s -u ${USERNAME}:${TOKEN}" "$url" ]
+Line 5 --------local url = "${API_URL}/${endpoint}"
+Line 6 --------local endpoint = reposiry_name
+Line 7 --------In the next function i was just listing the user name collaborators="$(github_api_get "$endpoint" "
+Loine 8--------local endpoint = "repos/${REPO_OWNER}/${REPO_NAME}/collaborators"
+Line 10 -------Next i was creating the if and else condion here i am using if [[-z "$collaborators" ]]then,if the no other string ist there it will print no user
+Line 11 --------If some string is present it will print the users who are having acess.
+
+
+
