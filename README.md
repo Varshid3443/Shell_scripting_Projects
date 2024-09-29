@@ -9,4 +9,6 @@ Steps to create the shell scripting:
      *Then check the our own git repositry is available in the server and then give the the right executable permission to the file list_users.sh
      *Next step  you need to export our username and token for username is our git name and token we need to generate in our oun git hub repositry.
      *cammonds "export usernsme="username_git"  "export token="git_token"
+     *And then execute the script file ./list_users.sh organization_name repositry_name"
+     *Finally you will get the users who are all having acess to the git repositry.
      
